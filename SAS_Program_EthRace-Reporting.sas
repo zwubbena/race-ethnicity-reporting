@@ -32,7 +32,8 @@ PROC SETINIT; RUN; /*Displays what products are licensed*/
 			IMPORT TEST DATASET FOR SAS PROGRAM
 **************************************************************************************/
 OPTIONS VALIDVARNAME=V7;
-LIBNAME ER XLSX "/home/zanewubbena0/ETH_RACE/TestData_Eth_Race.xlsx";
+/* Use the Excel workbook shipped with this repository */
+LIBNAME ER XLSX "InputData.xlsx";
 
 PROC CONTENTS DATA=ER.DATA_ETH_RACE; RUN;
 PROC PRINT DATA=ER.DATA_ETH_RACE; RUN;
@@ -285,14 +286,14 @@ DATA ETH_RACE_ALL;
 /* 		END; */
 
 	/* 64 Race/Ethnic Combinations https://blogs.sas.com/content/iml/2013/09/30/generate-combinations-in-sas.html */
-	ELSE IF H = 0 AND I = 0 AND A = 0 AND P = 0 AND B = 0 AND W = 0 THEN
-		DO;
-			ETH_RACE = 64;
-			ETH_RACEX = "H";
-			ETH_RACEX_L = "Hispanic/Latino";
-			ETH_RACE_AGG = "H";
-			ETH_RACE_VALID = "FALSE"; *NO valid race code;
-		END;
+        ELSE IF H = 0 AND I = 0 AND A = 0 AND P = 0 AND B = 0 AND W = 0 THEN
+                DO;
+                        ETH_RACE = 64;
+                        ETH_RACEX = "N";
+                        ETH_RACEX_L = "Not Available";
+                        ETH_RACE_AGG = "N";
+                        ETH_RACE_VALID = "FALSE"; *NO valid race code;
+                END;
 
 	/* 1 of 6 race/ethnicity combinations and aggregate output */
 	ELSE IF H = 1 AND I = 0 AND A = 0 AND P = 0 AND B = 0 AND W = 0 THEN
@@ -824,7 +825,7 @@ PROC FORMAT;
 		'B' = 'Black or African American'
 		'W' = 'White'
 		'T' = 'Two or More Races'
-/* 		'N' = 'Not Available' */
+                'N' = 'Not Available'
 		'M' = 'Missing'
 		;
 RUN;
