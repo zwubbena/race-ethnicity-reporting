@@ -2,7 +2,7 @@
 
 ## Data Collection and Data Reporting
 
-This document describes the difference between how race and ethnicity data are collected and how race and ethnicity data are reported (with a focus on special education) at the Texas Education Agency (TEA). 
+This document describes the difference between how race and ethnicity data are collected and how race and ethnicity data are reported (with a focus on special education) at the Texas Education Agency (TEA).
 
 Revised standards for classifying individuals by race and ethnicity were issued by the US Office of Management and Budget (OMB) in 1997. In 2007, the US Department of Education (USED) issued guidance to educational institutions on how race and ethnicity data will be collected and reported. For example, race and ethnicity data are used for calculating federal significant disproportionality (SD) requirements for the ED (34 CFR §300.647) and for disaggregating student assessment data for the State’s Results-Drive Accountability (RDA) Public Reports.
 
@@ -15,6 +15,14 @@ Race and ethnicity data are collected from local education agencies (LEAs) using
 * Rule 1: If “Hispanic/Latino” is selected, then student is reported as “H” regardless of the race(s) selected.
 * Rule 2: If “Not Hispanic/Latino” is selected and ONLY ONE race is selected, then student is reported as the single race category selected (I, A, B, P, or W).
 * Rule 3: If “Not Hispanic/Latino” is selected and TWO OR MORE races are selected, then student is reported in the category “Two or More Races” (T).
+
+## Repository contents
+
+* `SAS_Program_EthRace-Reporting.sas`: SAS program that imports the example dataset, generates the 65 possible race/ethnicity combinations, and produces the aggregate reporting categories.
+* `InputData.xlsx`: Excel workbook containing the sample PEIMS-style dataset used by the SAS program.
+* `OutputResults.xlsx`: Excel workbook with expected outputs from the SAS program for reference.
+* `Collection-Reporting-Flow.png`: Visual diagram showing how individual race and ethnicity selections are transformed into the seven reporting categories.
+* `README.md`: Overview of the project, including background on collection/reporting rules and links to additional resources.
 
 ## Resources:
 * Texas Education Data Standards (TEDS) Web-Enabled Data Standards
