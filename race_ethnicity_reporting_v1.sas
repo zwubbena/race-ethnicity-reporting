@@ -33,7 +33,7 @@ PROC SETINIT; RUN; /*Displays what products are licensed*/
 **************************************************************************************/
 OPTIONS VALIDVARNAME=V7;
 /* Use the Excel workbook shipped with this repository */
-LIBNAME ER XLSX "InputData.xlsx";
+LIBNAME ER XLSX "race_ethnicity_reporting_v1_input.xlsx";
 
 PROC CONTENTS DATA=ER.DATA_ETH_RACE; RUN;
 PROC PRINT DATA=ER.DATA_ETH_RACE; RUN;
