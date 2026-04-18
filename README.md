@@ -16,6 +16,11 @@ Race and ethnicity data are collected from local education agencies (LEAs) using
 * Rule 2: If “Not Hispanic/Latino” is selected and ONLY ONE race is selected, then student is reported as the single race category selected (I, A, B, P, or W).
 * Rule 3: If “Not Hispanic/Latino” is selected and TWO OR MORE races are selected, then student is reported in the category “Two or More Races” (T).
 
+## SAS Programs
+
+* `race_ethnicity_reporting_v1.sas` - Original SAS program.
+* `race_ethnicity_reporting_v2.sas` - Updated SAS program with inline test data and simplified race/ethnicity derivation lineage.
+
 ## Resources:
 * Texas Education Data Standards (TEDS) Web-Enabled Data Standards
 * IDEA Equity Requirements: Significant Disproportionality (SD)
