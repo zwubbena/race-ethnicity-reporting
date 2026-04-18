@@ -2,7 +2,7 @@
 
 ## Data Collection and Data Reporting
 
-This document describes the difference between how race and ethnicity data are collected and how race and ethnicity data are reported, with a focus on special education at the Texas Education Agency (TEA).
+This document describes the difference between how race and ethnicity data are collected and how race and ethnicity data are reported for special education.
 
 Revised standards for classifying individuals by race and ethnicity were issued by the U.S. Office of Management and Budget (OMB) in 1997. In 2007, the U.S. Department of Education (USED) issued guidance to educational institutions on how race and ethnicity data should be collected and reported. For example, race and ethnicity data are used to calculate federal significant disproportionality (SD) requirements for the ED (34 CFR §300.647) and to disaggregate student assessment data for the State’s Results-Driven Accountability (RDA) Public Reports.
 
