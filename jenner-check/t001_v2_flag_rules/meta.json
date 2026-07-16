@@ -1,0 +1,7 @@
+{
+  "bundle": "t001_v2_flag_rules",
+  "source_file": "race_ethnicity_reporting_v2.sas",
+  "source_blob_sha": "211faaa83273e9d89bf3b4e730dd56164be5aad8",
+  "source_commit": "5c1ac3e013ef04af5ef3da6a20bbc9aaff88da47",
+  "notes": "Runs verbatim, no edits. Derives the TEA 7-category race/ethnicity code (H/I/A/B/P/W/T/NR) from six binary race flags plus a Hispanic/Latino ethnicity flag using count-based rules, against the script's own inline DATALINES sample (13 rows covering every category including a dedup case). PROC SORT NODUPKEY, PROC FREQ, and PROC PRINT all exercised."
+}

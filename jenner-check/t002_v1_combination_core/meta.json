@@ -1,0 +1,7 @@
+{
+  "bundle": "t002_v1_combination_core",
+  "source_file": "race_ethnicity_reporting_v1.sas",
+  "source_blob_sha": "fcb157cd91b4d401f6f0bbdaf9099e517fbf7c54",
+  "source_commit": "5c1ac3e013ef04af5ef3da6a20bbc9aaff88da47",
+  "notes": "The original DATA ETH_RACE_ALL step (byte-for-byte unchanged, all 64 combination branches plus the Missing/Not-Available branches and the PROC FORMAT $ETH_RACE_LABEL trailer) reads its source via LIBNAME ER XLSX pointing at race_ethnicity_reporting_v1_input.xlsx, which a hosted runner cannot see. Substituted a DATALINES mock (SET MOCK_ETH_RACE instead of SET ER.DATA_ETH_RACE) built from 11 rows lifted verbatim from this same script's own inline ID/SPED/H/I/A/P/B/W test block, chosen to hit each of Missing, Not Available, all five single-race codes, and multi-race Hispanic combinations. The PROC IML combination-generator block (explicitly marked 'DO NOT RUN THIS CODE' in the source) and the diagnostic %put/PROC SETINIT preamble were omitted as non-substantive to the derivation logic being tested."
+}
