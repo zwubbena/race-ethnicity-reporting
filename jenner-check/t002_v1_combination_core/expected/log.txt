@@ -1,0 +1,44 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA MOCK_ETH_RACE
+
+NOTE: Processing inline DATALINES (11 lines)
+
+NOTE: Read 11 rows from DATALINES.
+NOTE: Wrote MOCK_ETH_RACE (11 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA ETH_RACE_ALL
+
+
+NOTE: Read 11 rows from MOCK_ETH_RACE.
+NOTE: Wrote ETH_RACE_ALL (11 rows, 13 columns).
+NOTE: DATA elapsed:
+  wall  0.05 seconds
+  cpu   0.05 seconds
+NOTE: PROC FORMAT library=WORK
+
+NOTE: FORMAT $ETH_RACE_LABEL defined (9 ranges).
+NOTE: PROC CONTENTS data=ETH_RACE_ALL
+
+NOTE: PROC CONTENTS completed: 11 observations, 13 variables
+NOTE: PROC SORT data=ETH_RACE_ALL
+
+NOTE: Read 11 rows from ETH_RACE_ALL.
+NOTE: Wrote ETH_RACE_ALL (11 rows, 13 columns).
+NOTE: PROC SORT statement used.
+NOTE: PROC PRINT data=ETH_RACE_ALL
+
+NOTE: PROC PRINT completed: 11 observations printed, 13 variables
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_eth_race_agg.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_eth_race_agg.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_eth_race_agg.spec.json
+NOTE: ODS plot written: freq_eth_racex.spec.json
+NOTE: PROC FREQ statement used.

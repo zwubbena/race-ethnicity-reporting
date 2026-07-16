@@ -1,0 +1,67 @@
+NOTE: Jenner v1.5.30 (build v1.5.30+unknown.20260715T062217Z.x86_64-unknown-linux-gnu)
+
+NOTE: Option OBS changed to 100.
+NOTE: DATA source_test
+
+NOTE: Processing inline DATALINES (13 lines)
+
+NOTE: Read 13 rows from DATALINES.
+NOTE: Wrote source_test (13 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC SORT data=source_test
+
+NOTE: 1 duplicate observations were output to DUPOUT dataset.
+NOTE: 1 duplicate observations were deleted.
+NOTE: Read 13 rows from source_test.
+NOTE: Wrote student_unique (12 rows, 10 columns).
+NOTE: PROC SORT statement used.
+NOTE: DATA analysis_base
+
+
+NOTE: Read 12 rows from student_unique.
+NOTE: Wrote analysis_base (12 rows, 10 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA race_flags
+
+
+NOTE: Read 12 rows from analysis_base.
+NOTE: Wrote race_flags (12 rows, 8 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA race_count
+
+
+NOTE: Read 12 rows from race_flags.
+NOTE: Wrote race_count (12 rows, 9 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: DATA race_eth_7cat
+
+
+NOTE: Read 12 rows from race_count.
+NOTE: Wrote race_eth_7cat (12 rows, 11 columns).
+NOTE: DATA elapsed:
+  wall  0.00 seconds
+  cpu   0.00 seconds
+NOTE: PROC FREQ
+NOTE: ODS plot written: freq_race_eth_code.spec.json
+NOTE: ODS plot written: freq_race_eth_label.spec.json
+NOTE: ODS plot written: freq_h.spec.json
+NOTE: ODS plot written: freq_i.spec.json
+NOTE: ODS plot written: freq_a.spec.json
+NOTE: ODS plot written: freq_b.spec.json
+NOTE: ODS plot written: freq_p.spec.json
+NOTE: ODS plot written: freq_w.spec.json
+NOTE: PROC FREQ statement used.
+NOTE: PROC PRINT data=race_eth_7cat
+
+NOTE: PROC PRINT completed: 12 observations printed, 11 variables
+NOTE: PROC PRINT data=duplicate_review
+
+NOTE: PROC PRINT completed: 1 observations printed, 10 variables

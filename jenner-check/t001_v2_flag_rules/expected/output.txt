@@ -1,0 +1,74 @@
+                                                   The FREQ Procedure
+
+RACE_ETH_CODE    Frequency    Percent
+--------------------------------------
+H                        3     25.00
+A                        2     16.67
+T                        2     16.67
+B                        1      8.33
+I                        1      8.33
+NR                       1      8.33
+P                        1      8.33
+W                        1      8.33
+
+RACE_ETH_LABEL                                           Frequency    Percent
+------------------------------------------------------------------------------
+Hispanic/Latino (Any Race)                                       3     25.00
+Asian (Non-Hispanic)                                             2     16.67
+Two or More Races (Non-Hispanic)                                 2     16.67
+American Indian/Alaska Native (Non-Hispanic)                     1      8.33
+Black/African American (Non-Hispanic)                            1      8.33
+Native Hawaiian/Other Pacific Islander (Non-Hispanic)            1      8.33
+Not Reported (Ethnicity/Any Race)                                1      8.33
+White (Non-Hispanic)                                             1      8.33
+
+H    Frequency    Percent
+--------------------------
+0            9     75.00
+1            3     25.00
+
+I    Frequency    Percent
+--------------------------
+0            9     75.00
+1            3     25.00
+
+A    Frequency    Percent
+--------------------------
+0            7     58.33
+1            5     41.67
+
+B    Frequency    Percent
+--------------------------
+0            9     75.00
+1            3     25.00
+
+P    Frequency    Percent
+--------------------------
+0           10     83.33
+1            2     16.67
+
+W    Frequency    Percent
+--------------------------
+0            7     58.33
+1            5     41.67
+                                                  Inline Test Results
+
+DISTRICT_ID  TX_UNIQUE_STUDENT_ID  H  I  A  B  P  W  RACE_CNT  RACE_ETH_CODE                                         RACE_ETH_LABEL
+001001       1000000001            1  0  0  0  0  0         0  H              Hispanic/Latino (Any Race)
+001001       1000000002            1  0  1  0  0  1         2  H              Hispanic/Latino (Any Race)
+001001       1000000003            0  1  0  0  0  0         1  I              American Indian/Alaska Native (Non-Hispanic)
+001001       1000000004            0  0  1  0  0  0         1  A              Asian (Non-Hispanic)
+001001       1000000005            0  0  0  1  0  0         1  B              Black/African American (Non-Hispanic)
+001001       1000000006            0  0  0  0  1  0         1  P              Native Hawaiian/Other Pacific Islander (Non-Hispanic)
+001001       1000000007            0  0  0  0  0  1         1  W              White (Non-Hispanic)
+001001       1000000008            0  0  1  0  0  1         2  T              Two or More Races (Non-Hispanic)
+001001       1000000009            0  1  0  1  0  1         3  T              Two or More Races (Non-Hispanic)
+001001       1000000010            0  0  0  0  0  0         0  NR             Not Reported (Ethnicity/Any Race)
+001001       1000000011            0  0  1  0  0  0         1  A              Asian (Non-Hispanic)
+001001       1000000012            1  1  1  1  1  1         5  H              Hispanic/Latino (Any Race)
+
+                            Duplicate Records Removed by DISTRICT_ID + TX_UNIQUE_STUDENT_ID
+
+SCHOOL_YEAR  DISTRICT_ID  DISTRICT_NAME  TX_UNIQUE_STUDENT_ID  RACE_AMER_IND_ALASK_DESC  RACE_ASIAN_DESC  RACE_BLACK_AFR_AMER_DESC  RACE_HAW_PAC_ISL_DESC  RACE_WHITE_DESC  HISPANIC_LATINO_ETHNICITY
+2024-2025    001001       Test ISD       1000000012                                                                                                        White                                    0
+

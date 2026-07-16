@@ -1,0 +1,98 @@
+
+PROC CONTENTS
+-------------------------------------------------------------------------------
+
+Data Set Name: ETH_RACE_ALL
+Observations:  11
+Variables:     13
+
+Variables (in alphabetical order):
+
+  #  Variable        Type    Len  Format  Label
+---  --------------  ----  -----  ------  -----
+  1  A                Num      8          
+  2  B                Num      8          
+  3  ETH_RACE         Num      8          
+  4  ETH_RACEX       Char     12          
+  5  ETH_RACEX_L     Char    200          
+  6  ETH_RACE_AGG    Char     30          
+  7  ETH_RACE_VALID  Char    200          
+  8  H                Num      8          
+  9  I                Num      8          
+ 10  ID              Char    200          
+ 11  P                Num      8          
+ 12  SPED             Num      8          
+ 13  W                Num      8          
+
+-------------------------------------------------------------------------------
+
+
+  Obs    ID  SPED  H  I  A  P  B  W  ETH_RACE    ETH_RACEX                                                                                                                              ETH_RACEX_L                               ETH_RACE_AGG  ETH_RACE_VALID
+-----  ----  ----  -  -  -  -  -  -  --------  -----------  ---------------------------------------------------------------------------------------------------------------------------------------  -----------------------------------------  --------------
+    1  0065     1  .  .  .  .  .  .         0  M            Missing                                                                                                                                  Missing                                    FALSE
+    2  0002     1  0  1  0  0  0  0         1  I            American Indian or Alaska Native                                                                                                         American Indian or Alaska Native           TRUE
+    3  0003     1  0  0  1  0  0  0         2  A            Asian                                                                                                                                    Asian                                      TRUE
+    4  0005     1  0  0  0  0  1  0         4  B            Black or African American                                                                                                                Black or African American                  TRUE
+    5  0004     1  0  0  0  1  0  0         8  P            Native Hawaiian/Other Pacific Islander                                                                                                   Native Hawaiian or Other Pacific Islander  TRUE
+    6  0006     1  0  0  0  0  0  1        16  W            White                                                                                                                                    White                                      TRUE
+    7  0001     1  1  0  0  0  0  0        32  H            Hispanic/Latino                                                                                                                          Hispanic/Latino                            FALSE
+    8  0022     1  1  1  1  0  0  0        35  I,A,H        American Indian or Alaska Native + Asian + Hispanic/Latino                                                                               Hispanic/Latino                            TRUE
+    9  0057     1  1  1  1  1  1  0        47  I,A,B,P,H    American Indian or Alaska Native + Asian + Black or African American + Native Hawaiian/Other Pacific Islander + Hispanic/Latino          Hispanic/Latino                            TRUE
+   10  0063     1  1  1  1  1  1  1        63  I,A,B,P,W,H  American Indian or Alaska Native + Asian + Black or African American + Native Hawaiian/Other Pacific Islander + White + Hispanic/Latino  Hispanic/Latino                            TRUE
+   11  0064     1  0  0  0  0  0  0        64  N            Not Available                                                                                                                            Not Available                              FALSE
+
+                                                   The FREQ Procedure
+
+                                          Cumulative    Cumulative
+ETH_RACE_AGG    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------------
+H                       4     36.36            4        36.36
+A                       1      9.09            5        45.45
+B                       1      9.09            6        54.55
+I                       1      9.09            7        63.64
+M                       1      9.09            8        72.73
+N                       1      9.09            9        81.82
+P                       1      9.09           10        90.91
+W                       1      9.09           11       100.00
+                                                   The FREQ Procedure
+
+                                          Cumulative    Cumulative
+ETH_RACE_AGG    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------------
+H                       3     37.50            3        37.50
+A                       1     12.50            4        50.00
+B                       1     12.50            5        62.50
+I                       1     12.50            6        75.00
+P                       1     12.50            7        87.50
+W                       1     12.50            8       100.00
+                                                   The FREQ Procedure
+
+Number of Variable Levels
+
+Variable                 Levels
+--------------------------------
+ETH_RACE_AGG                  6
+ETH_RACEX                     8
+
+
+                                          Cumulative    Cumulative
+ETH_RACE_AGG    Frequency    Percent     Frequency      Percent
+---------------------------------------------------------------------
+H                       3     37.50            3        37.50
+A                       1     12.50            4        50.00
+B                       1     12.50            5        62.50
+I                       1     12.50            6        75.00
+P                       1     12.50            7        87.50
+W                       1     12.50            8       100.00
+
+                                         Cumulative    Cumulative
+ETH_RACEX      Frequency    Percent     Frequency      Percent
+--------------------------------------------------------------------
+A                      1     12.50            1        12.50
+B                      1     12.50            2        25.00
+I                      1     12.50            3        37.50
+I,A,B,P,H              1     12.50            4        50.00
+I,A,B,P,W,H            1     12.50            5        62.50
+I,A,H                  1     12.50            6        75.00
+P                      1     12.50            7        87.50
+W                      1     12.50            8       100.00

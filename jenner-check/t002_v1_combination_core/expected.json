@@ -1,0 +1,14 @@
+{
+  "_captured_at": "2026-07-16T04:13:47Z",
+  "_captured_run_id": "r_0cd97fa25b03480a93e3e1e771418804",
+  "status": "ok",
+  "exit_code": 0,
+  "log_contains": [
+    "NOTE: Wrote MOCK_ETH_RACE (11 rows, 8 columns).",
+    "NOTE: Wrote ETH_RACE_ALL (11 rows, 13 columns).",
+    "NOTE: FORMAT $ETH_RACE_LABEL defined (9 ranges).",
+    "NOTE: PROC PRINT completed: 11 observations printed, 13 variables"
+  ],
+  "log_does_not_contain": ["ERROR:", "[JENNER-ERROR"],
+  "diagnostics": {"parse_warnings": [], "runtime_warnings": []}
+}
